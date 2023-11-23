@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Gebäudeausbauten umschalten
 // @namespace    www.leitstellenspiel.de
-// @version      1.0
+// @version      1.1
 // @description  Fügt einen Button hinzu, um den Status aller Ausbauten in einem Gebäude umzuschalten
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/buildings/*
@@ -13,7 +13,7 @@
 
     // Funktion zum Senden von Hintergrundanfragen
     function sendBackgroundRequests(id, authToken, callback) {
-        const totalRequests = 10;
+        const totalRequests = 18;
         let completedRequests = 0;
 
         for (let i = 0; i <= totalRequests; i++) {
