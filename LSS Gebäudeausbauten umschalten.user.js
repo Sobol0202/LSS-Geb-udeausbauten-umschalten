@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Gebäudeausbauten umschalten
 // @namespace    www.leitstellenspiel.de
-// @version      1.1
+// @version      1.2
 // @description  Fügt einen Button hinzu, um den Status aller Ausbauten in einem Gebäude umzuschalten
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/buildings/*
@@ -86,7 +86,7 @@
                 });
 
                 // Finden des Container-Elements und Hinzufügen des Buttons
-                const readinessElement = document.querySelector('.dl-horizontal dd span.label-success');
+                const readinessElement = document.querySelector('.dl-horizontal dd span.label');
                 if (readinessElement) {
                     //console.log('Element für Einsatzbereitschaft gefunden...');
                     const container = readinessElement.parentElement;
